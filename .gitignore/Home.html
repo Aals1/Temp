@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+.container {
+    position: relative;
+    text-align: center;
+    padding: 14px 16px;
+    color: white;
+    font-size: 120px;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container1{
+    position: relative;
+    font-family: Arial;
+}
+
+.text-block {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: grey;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+.row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    -ms-flex: 50%; /* IE 10 */
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+h1{
+ color: black;
+ font-size: 70px;
+}
+h3{
+ color: Grey;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container3{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+div.transbox {
+  margin: 30px;
+  background-color: #EAEDF1;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+</style>
+<div class="container">
+ <img src="architecture-bicycle-parking-bicycles-1048034.jpg" alt="Architecture" width="1500" height="800">
+ <div class="centered">
+<div class="transbox"><h1> Cornucopia </h1></div></div>
+</div>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#link1">Images</a>
+  <a href="#link2">About</a>
+  <a href="#link3">Contact</a>
+  <a href="SignUp.html">Sign Up</a>
+  <a href="Trending.html">Trending</a>
+</div>
+
+<div class="main">
+  <h2 id="link1">Images you might like</h2>
+<hr>
+<body>
+
+<!-- Header -->
+<div class="header" id="myHeader">
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn active" onclick="two()">2</button>
+  <button class="btn" onclick="four()">4</button>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="action-blur-car-246320.jpg" style="width:100%">
+    <img src="aeroplane-aircraft-airplane-313768.jpg" style="width:100%">
+    <img src="architecture-automobiles-buildings-704957.jpg" style="width:100%">
+    <img src="asphalt-cold-fog-296555.jpg" style="width:100%">
+    <img src="beach-crystal-ball-glass-1047896.jpg" style="width:100%">
+    <img src="bedroom-clouds-curtain-1047328.jpg" style="width:100%">
+    <img src="bosque-car-car-lights-626155.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="black-and-white-black-background-black-white-733252.jpg" style="width:100%">
+    <img src="antique-black-and-white-blur-698324.jpg" style="width:100%">
+    <img src="black-and-white-black-and-white-conifer-763097.jpg" style="width:100%">
+    <img src="abstract-art-black-and-white-125509.jpg" style="width:100%">
+    <img src="black-and-white-black-and-white-dark-702139.jpg" style="width:100%">
+    <img src="black-and-white-chess-chess-piece-411195.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="apartments-architecture-balcony-425160.jpg" style="width:100%">
+    <img src="black-and-white-boat-darkness-748626.jpg" style="width:100%">
+    <img src="black-and-white-fog-foggy-234272.jpg" style="width:100%">
+    <img src="adventure-black-and-white-boardwalk-248347.jpg" style="width:100%">
+    <img src="black-and-white-contrast-dark-633488.jpg" style="width:100%">
+    <img src="black-and-white-branch-cherry-blossom-34435.jpg" style="width:100%">
+    <img src="black-and-white-black-and-white-conifer-763097.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="platform-public-transportation-railtrack-38244.jpg" style="width:100%">
+    <img src="architecture-audi-automobile-68438.jpg" style="width:100%">
+    <img src="blur-car-caution-163945.jpg" style="width:100%">
+    <img src="asia-bicycle-bikes-315191.jpg" style="width:100%">
+    <img src="basket-bicycle-bike-34754.jpg" style="width:100%">
+    <img src="architecture-city-dark-1005767.jpg" style="width:100%">
+  </div>
+</div>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.msFlex = "100%";  // IE10
+        elements[i].style.flex = "100%";
+    }
+}
+
+// Two images side by side
+function two() {
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.msFlex = "50%";  // IE10
+        elements[i].style.flex = "50%";
+    }
+}
+
+// Four images side by side
+function four() {
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.msFlex = "25%";  // IE10
+        elements[i].style.flex = "25%";
+    }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+<br>
+<h2 id="link2">About</h2>
+<hr>
+<br>
+<p>There is something about the way poetry has the ability to go with anything that accompanies it, it can be music, or photographs, or even silence for that matter.
+It never matters what you're reading, or the circumstances under which you might be reading the same. It all feels the same either way. Ofcource the material you read greatly contributes to your surroundings. The happiest of poems can sound utterly sad when read in a gloory room perhaps, and the saddest poem can be cheerful, if you're reading in a cafe surrounded by strangers laughing and playing.
+All the same, allow us to introduce to you some of the all time classic poets, whose words echo in our heads from time immemorial.
+</p>
+<br>
+<h3>5. William Wordsworth</h3>
+<p>Wordsworth was born to John Wordsworth and Anne Coockson on 7 April, 1770 in northwest England as the second of five children. He was one of the pioneers of the introduction of the much talked about Romantic age in English Literature that left a a lasting impact on literary work and developments.  One of the prime works under this movement was the “Lyrical Ballads” composed in 1798 that bears testimony to Wordsworth’s command over English literature.  A poet’s ‘magnum opus’ is the best work produced by him, termed as a masterpiece. In case of Wordsworth, it was the “Prelude”.  His poems “The Solitary Reaper” and “Anecdote for fathers” are some of his best works that to this day are taught to students all over the world. It was Wordsworth who said “Poetry is spontaneous overflow of powerful feelings having originated from emotions recollected in tranquility”. He served as the Poet Laureate of Britain from 1843 to 1850, the year he died.</p>
+<h3>4. John Keats</h3>
+<p>John Keats was born on October 31, 1795 in Moorgate, London to Thomas and Frances Keats. Perhaps, another of the established Romantic poets, Keats received praise for his series of odes unto nature’s various facets. His writings were smooth in emotional flow and description. Unfortunately, only about 6 years into his passion, his health deteriorated on account of tuberculosis and he bid farewell to the world on 23 February, 1821 at a young age of 25. “Ode to the Nightingale” and “To Autumn” were some of his best works.</p>
+<h3>3. Lord Byron</h3>
+<p>Lord Byron was born on 22 January 1788. He was a prolific writer and is best known for his work “Don Juan”.  He was active in politics and resented his competitors by his literary works.  He is one of the most lauded poets of Britain although his personal life was black marked by scandals and credit issues.  He became a part of the popular culture in his time .  He succumbed to a violent fever on April 19, 1824.</p>
+<h3>2. Rabindranath Tagore</h3>
+<p>Born on 7 May 1861, he was the first non-European to win the Nobel Prize in Literature for his work Gitanjali in 1913 that was reviewed upon as being original and reviving spiritual and sympathetic feelings. Many of his Bengali poems lost their beauty in translation.  A symbol of Bengal Renaissance, he modernised Bengali art and covered topics ranging from political issues to the personal ones. He let go his knighthood to protest against the infamous Jallianwala Bagh Massacre.  One of the greatest poets the subcontinent has ever produced, he founded the Viswa Bharati Institute. One of his most famous works was “Where The Mind is Without Fear.”</p>
+<h3>1. Maya Angelou</h3>
+<p>Born on April 4, 1928, Maya Angelou is an American poet who rose to critical acclaim with her work “I Know Why The Caged Bird Sings”. She has published numerous autobiographies, essays and poems mainly focusing on race and identity. In her literary life spanning for over 50 years she has received many a awards and a litany of honorary degrees from across the world for an outstanding contribution to political ideas and standpoints through her works.  She is the most famous among the modern day contemporary writers. Though her poems did attract negative reviews, she has been well received and appreciated by social activists and readers across the globe.</p>
+<br>
+<br>
+<h2 id= "link3">Contact</h2>
+<hr>
+<p>Lets get in touch and you could write to us about your pictures or poems.
+<div class="container3">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="russia">Russia</option>
+      <option value="india">India</option>
+      <option value="africaa">Africa</option>
+      <option value="china">China</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+</body>
+</html>
